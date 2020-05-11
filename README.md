@@ -40,7 +40,7 @@ services:
       POSTGRES_PORT: 5432
       POSTGRES_USER: movim
       POSTGRES_PASSWORD: changeme
-    image: thundergreen/movim_docker
+    image: thundergreen/movim
     volumes:
     - ${PWD}/movim:/var/www/html:rw
   nginx:
