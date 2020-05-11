@@ -1,8 +1,5 @@
 FROM php:7.3-fpm
 
-LABEL version="0.18rc1"
-LABEL maintainer="ThUnD3r|Gr33n <thorsten@emevth.no-ip.biz>"
-
 RUN set -ex; \
 	\
 	apt-get update; \
