@@ -1,5 +1,8 @@
 FROM php:7.3-fpm
 
+LABEL version="0.18rc1"
+LABEL maintainer="ThUnD3r|Gr33n <thorsten@emevth.no-ip.biz>"
+
 RUN set -ex; \
 	\
 	apt-get update; \
@@ -40,8 +43,8 @@ RUN set -ex; \
 
 VOLUME /var/www/html
 
-ENV MOVIM_VERSION 0.17
-ENV MOVIM_SHA1 b54fb4f2f7d2e655f4788e07a7940a87f82be0f8
+ENV MOVIM_VERSION 0.18rc1
+ENV MOVIM_SHA1 adfee54006adabf45440c5b66a761f39fa5f4f10
 
 RUN set -ex; \
 	curl -o movim.tar.gz -fSL "https://github.com/movim/movim/archive/v${MOVIM_VERSION}.tar.gz"; \
